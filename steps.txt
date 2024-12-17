@@ -1,0 +1,13 @@
+pip install keras_facenet
+
+1. Run python capture_video.py  --name=<person's name>
+2. Run python extract_face.py
+3. Train model using embedding_classifier.ipynb or image_classifier.ipynb
+4. Finally, run the model with 
+	python face_classification.py --type=emb --model=knn
+	python face_classification.py --type=emb --model=svm
+	python face_classification.py --type=img --model=knn
+	python face_classification.py --type=img --model=svm
+One of above methods
+		
+
